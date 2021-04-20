@@ -1,0 +1,2 @@
+# scipytutorial
+scipy package exploration
