@@ -31,7 +31,7 @@ def main():
     # create a mesh from the axis
     x, y = meshgrid(xaxis, yaxis)
     # compute targets
-    results = objective(x, y)
+    results = ackley(x, y)
     # create a surface plot
     figure = plt.figure()
     axis = figure.gca(projection='3d')
@@ -41,7 +41,7 @@ def main():
 
 
 # ackley function
-def objective(x, y):
+def ackley(x, y):
 	return -20.0 * exp(-0.2 * sqrt(0.5 * (x**2 + y**2))) - exp(0.5 * (cos(2 * pi * x) + cos(2 * pi * y))) + e + 20
 
 
